@@ -51,7 +51,7 @@ function generateExcelReport(data, outputPath) {
 }
 
 // Ruta de la unidad D
-const targetDir = 'D:/';
+const targetDir = '.';
 const filesList = walkDir(targetDir);
 
 // Preparamos los datos para el reporte
@@ -65,7 +65,7 @@ const data = filesList.map(file => ({
 }));
 
 // Generamos el reporte
-const outputPath = 'D:/Reporte_Archivos.xlsx';
+const outputPath = './Reporte_Archivos.xlsx';
 generateExcelReport(data, outputPath);
 
 console.log('Report generated:', outputPath);
